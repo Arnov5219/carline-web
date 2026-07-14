@@ -16,32 +16,74 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
 
   <!-- Navigation Header -->
   <div id="header"></div>
 
-<main>
-    <section class="placeholder-main">
-      <div class="placeholder-container">
-        <!-- Blueprint icon overlay -->
-        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="12" y1="8" x2="12" y2="12"/>
-          <line x1="12" y1="16" x2="12.01" y2="16"/>
-        </svg>
-        <h1 class="placeholder-title">About Us</h1>
-        <p class="placeholder-text">This section of the CARLine Technologies engineering platform is to be loaded soon.</p>
-        <a href="index.html" class="btn btn-primary">
-          Back to Homepage
-          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
+<main class="about-page">
+  <section class="about-hero" aria-labelledby="about-title">
+    <div class="about-shell">
+      <div class="about-hero-copy animate-fade-up">
+        <p class="about-eyebrow">About Us</p>
+        <h1 id="about-title">Engineering Excellence for the Future of Mobility</h1>
+        <p class="about-lead">CARLine Technologies is an automotive engineering partner helping teams transform ambitious mobility ideas into practical, production-ready solutions.</p>
+        <a class="about-hero-link" href="#who-we-are">Discover our story <span aria-hidden="true">↓</span></a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section class="about-section" id="who-we-are" aria-labelledby="who-title">
+    <div class="about-shell about-two-column">
+      <figure class="about-image-panel scroll-reveal">
+        <img src="images/v1_221.png" alt="Digital automotive engineering model displayed in a CAD environment" loading="lazy">
+        <figcaption>Built for the demands of modern mobility.</figcaption>
+      </figure>
+      <div class="about-copy scroll-reveal">
+        <p class="about-eyebrow">Who We Are</p>
+        <h2 id="who-title">Engineering that moves ideas forward.</h2>
+        <p>We bring automotive product and manufacturing engineering together under one capable team. From early concepts through production support, we create precise digital solutions that make development more efficient.</p>
+        <p>Our engineers work closely with global partners to deliver reliable, scalable work with the responsiveness of a focused engineering team.</p>
+        <ul class="about-check-list">
+          <li>Automotive-domain expertise</li><li>Collaborative, customer-focused delivery</li><li>Quality-led engineering processes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-stats-section" aria-label="CARLine Technologies at a glance">
+    <div class="about-shell">
+      <div class="about-stats-grid metrics-grid scroll-reveal">
+        <article class="about-stat"><strong><span class="counter" data-target="50">0</span>+</strong><span>Engineers</span></article>
+        <article class="about-stat"><strong><span class="counter" data-target="10">0</span>+</strong><span>Years Experience</span></article>
+        <article class="about-stat"><strong><span class="counter" data-target="100">0</span>+</strong><span>Projects Delivered</span></article>
+        <article class="about-stat"><strong>Global</strong><span>Client Presence</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section about-capabilities" aria-labelledby="capabilities-title">
+    <div class="about-shell">
+      <header class="about-section-heading scroll-reveal"><p class="about-eyebrow">Our Capabilities</p><h2 id="capabilities-title">Specialist knowledge across the engineering lifecycle.</h2></header>
+      <div class="about-card-grid">
+        <article class="about-feature-card scroll-reveal"><span class="about-icon" aria-hidden="true">⌁</span><h3>Product Engineering</h3><p>Design, detailing and validation support for automotive components and systems.</p></article>
+        <article class="about-feature-card scroll-reveal"><span class="about-icon" aria-hidden="true">▦</span><h3>Manufacturing Engineering</h3><p>Process planning and tooling expertise that help production perform at its best.</p></article>
+        <article class="about-feature-card scroll-reveal"><span class="about-icon" aria-hidden="true">⌘</span><h3>Embedded Systems</h3><p>Thoughtful integration support for connected and intelligent mobility systems.</p></article>
+        <article class="about-feature-card scroll-reveal"><span class="about-icon" aria-hidden="true">◈</span><h3>Digital Engineering</h3><p>Data-rich CAD, simulation and digital workflows for informed decisions.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-cta" aria-labelledby="cta-title">
+    <div class="about-shell about-cta-content scroll-reveal">
+      <p class="about-eyebrow">Start a Conversation</p><h2 id="cta-title">Let's Build the Future Together</h2>
+      <p>Bring your next engineering challenge to a team ready to move it forward.</p>
+      <a class="about-cta-button" href="contact.html">Contact Our Experts <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</main>
 
     <!-- Footer -->
   <div id="footer"></div>
