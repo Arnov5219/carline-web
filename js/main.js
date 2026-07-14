@@ -4,13 +4,19 @@
  * ------------------------------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', () => {
-  setupHeaderScroll();
-  setupMobileNav();
   setupScrollReveal();
   setupMetricsCounter();
-  setupActiveNavLinks();
   setupShareButton();
 });
+
+/**
+ * Initializes interactions for HTML injected by js/include.js.
+ */
+window.initializeSharedComponents = function initializeSharedComponents() {
+  setupHeaderScroll();
+  setupMobileNav();
+  setupActiveNavLinks();
+};
 
 /**
  * 1. Scroll-triggered Navbar Style Changes
