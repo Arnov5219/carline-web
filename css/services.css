@@ -1,0 +1,265 @@
+/* -------------------------------------------------------------
+ * CARLine Technologies - css/services.css
+ * Engineering Pillars layout, glassmorphic card grids, and tag elements
+ * ------------------------------------------------------------- */
+
+/* Section: Engineering Pillars */
+.pillars-section {
+  position: relative;
+  padding: 8rem 2rem;
+  background-color: var(--bg-primary);
+  /* Removed border-top for a seamless fade transition */
+}
+
+.pillars-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(180deg, #ffffff 0%, #a5c2ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Grid layout for the cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+/* Glassmorphism Cards as Link Blocks */
+.pillar-card {
+  display: block; /* Ensure it behaves as a full link block */
+  position: relative;
+  background: rgba(16, 22, 38, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(133, 169, 255, 0.08);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  transition: var(--transition-smooth);
+  overflow: hidden;
+  text-align: left;
+}
+
+.pillar-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(133, 169, 255, 0.25);
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.5), 
+    0 0 30px rgba(133, 169, 255, 0.08);
+}
+
+.card-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(133, 169, 255, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+  opacity: 0;
+  transition: var(--transition-smooth);
+  z-index: 1;
+}
+
+.pillar-card:hover .card-glow {
+  opacity: 1;
+}
+
+/* Card details styling */
+.card-icon-container {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(133, 169, 255, 0.08);
+  border: 1px solid rgba(133, 169, 255, 0.15);
+  color: var(--accent-blue);
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  transition: var(--transition-smooth);
+}
+
+.pillar-card:hover .card-icon-container {
+  background: var(--accent-blue);
+  color: var(--bg-primary);
+  box-shadow: 0 0 15px rgba(133, 169, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.pillar-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+  position: relative;
+  z-index: 2;
+}
+
+.card-description {
+  color: var(--text-muted);
+  font-size: 0.975rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  height: 72px; /* Fixed height for clean grid alignment */
+  overflow: hidden;
+}
+
+/* Tag buttons/labels inside cards */
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  position: relative;
+  z-index: 2;
+}
+
+.tag {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem 0.9rem;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+  transition: var(--transition-fast);
+}
+
+.pillar-card:hover .tag {
+  border-color: rgba(133, 169, 255, 0.12);
+  background: rgba(133, 169, 255, 0.02);
+}
+
+.tag:hover {
+  background: rgba(133, 169, 255, 0.08) !important;
+  color: var(--accent-blue);
+  border-color: rgba(133, 169, 255, 0.3) !important;
+}
+
+/* -------------------------------------------------------------
+ * Dedicated Sub-services Page layout (e.g. manufacturing-engineering.html)
+ * ------------------------------------------------------------- */
+.details-section {
+  padding: 8rem 2rem 5rem;
+  min-height: 80vh;
+}
+
+.details-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.details-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-blue);
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  font-family: var(--font-display);
+}
+
+.details-back-link:hover {
+  color: #ffffff;
+  transform: translateX(-4px);
+}
+
+.details-header {
+  margin-bottom: 3.5rem;
+}
+
+.details-pretitle {
+  color: var(--accent-blue);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.details-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #85a9ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.details-intro {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.details-feature-card {
+  background: rgba(16, 22, 38, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2.25rem;
+  transition: var(--transition-smooth);
+}
+
+.details-feature-card:hover {
+  border-color: rgba(133, 169, 255, 0.3);
+  background: rgba(16, 22, 38, 0.5);
+  transform: translateY(-3px);
+}
+
+.feature-num {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.feature-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

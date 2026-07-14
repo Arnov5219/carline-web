@@ -1,0 +1,176 @@
+/* -------------------------------------------------------------
+ * CARLine Technologies - css/footer.css
+ * Multi-column structured engineering footer styling
+ * ------------------------------------------------------------- */
+
+.footer {
+  background-color: var(--bg-primary);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 4rem 2rem 3rem;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row 1: Brand Info */
+.footer-brand-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-brand-logo .logo-img {
+  height: 36px;
+  width: auto;
+}
+
+.footer-brand-logo .logo-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.footer-brand-logo .logo-text span {
+  font-weight: 800;
+  color: var(--accent-blue);
+  background: linear-gradient(135deg, #a5c2ff 0%, #85a9ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-brand-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Dividers */
+.footer-divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.06);
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+/* Row 2: Grid of Links & Info */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.footer-col-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.footer-col-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-col-link {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  transition: var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-col-link:hover {
+  color: var(--accent-blue);
+  transform: translateX(2px);
+}
+
+.footer-contact-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.footer-contact-text a {
+  color: var(--accent-blue);
+  transition: var(--transition-fast);
+  font-weight: 500;
+}
+
+.footer-contact-text a:hover {
+  color: #ffffff;
+}
+
+/* Row 3: Registered Office details */
+.footer-office-row {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.footer-office-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Row 4: Copyright and Policy Links */
+.footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copyright {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.footer-policy-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.footer-policy-link {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  transition: var(--transition-fast);
+}
+
+.footer-policy-link:hover {
+  color: var(--accent-blue);
+}

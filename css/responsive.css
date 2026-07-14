@@ -1,0 +1,165 @@
+/* -------------------------------------------------------------
+ * CARLine Technologies - css/responsive.css
+ * Responsive media query breakpoints and screen adjustments
+ * ------------------------------------------------------------- */
+
+/* Notebooks & small desktops */
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .mega-dropdown {
+    width: 460px;
+    gap: 1rem;
+  }
+  
+  .hero-title {
+    font-size: 3.25rem;
+  }
+}
+
+/* Tablets (landscape and portrait) */
+@media (max-width: 992px) {
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+  
+  .nav-desktop {
+    display: none; /* Hide desktop menu */
+  }
+  
+  .mobile-nav-toggle {
+    display: flex; /* Show hamburger button */
+  }
+  
+  .hero-section::before {
+    opacity: 0.3; /* Reduce opacity on tablets to 25-35% */
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-ctas {
+    justify-content: center;
+  }
+  
+  .metrics-grid {
+    margin: 0 auto;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .section-header {
+    margin-bottom: 3.5rem;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .footer-bottom-row {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-ctas {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 2rem;
+  }
+  
+  .pillar-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .card-description {
+    height: auto; /* Allow text wrapping on narrow screens */
+  }
+  
+  .hero-section::before {
+    opacity: 0.12; /* Reduce opacity on mobile to 10-15% */
+    background-position: center, center center; /* Center image on small screens */
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 5;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand-row {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-policy-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  
+  .details-title {
+    font-size: 2.25rem;
+  }
+}
