@@ -4,48 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - CARLine Technologies</title>
-  <meta name="description" content="Contact CARLine Technologies - get in touch for automotive styling and engineering fixtures.">
-  <!-- Google Fonts -->
+  <meta name="description" content="Discuss your product engineering, manufacturing engineering, or general automotive mechanical engineering requirements with CARLine Technologies.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
-
-  <!-- Navigation Header -->
   <div id="header"></div>
 
-<main>
-    <section class="placeholder-main">
-      <div class="placeholder-container">
-        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="12" y1="8" x2="12" y2="12"/>
-          <line x1="12" y1="16" x2="12.01" y2="16"/>
-        </svg>
-        <h1 class="placeholder-title">Contact Us</h1>
-        <p class="placeholder-text">This section of the CARLine Technologies engineering platform is to be loaded soon.</p>
-        <a href="index.html" class="btn btn-primary">
-          Back to Homepage
-          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
+  <main class="contact-page">
+    <section class="contact-hero" aria-labelledby="contact-title">
+      <div class="contact-shell contact-hero-copy animate-fade-up">
+        <p class="contact-eyebrow">Contact Us</p>
+        <h1 id="contact-title">Let's Discuss Your Engineering Requirements</h1>
+        <p>Whether you need Product Engineering, Manufacturing Engineering, or have a general enquiry, our engineering team is ready to assist you.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-details-title">
+      <div class="contact-shell contact-layout">
+        <div class="contact-information scroll-reveal">
+          <header class="contact-section-heading">
+            <p class="contact-eyebrow">Contact Information</p>
+            <h2 id="contact-details-title">Connect with our engineering team.</h2>
+            <p>Speak with CARLine Technologies about your mechanical automotive engineering requirements.</p>
+          </header>
+
+          <div class="contact-details-grid">
+            <figure class="contact-engineering-visual">
+              <img src="images/contact-engineering.png" alt="Automotive 3D CAD engineering model" loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <aside class="contact-form-card scroll-reveal" aria-labelledby="enquiry-title">
+          <p class="contact-eyebrow">Send an Enquiry</p>
+          <h2 id="enquiry-title">Tell us how we can help.</h2>
+          <p>Share a few details and our team will get back to you.</p>
+          <form class="contact-form" action="#" method="post">
+            <div class="contact-field-row">
+              <label>Full Name<input type="text" name="name" placeholder="Your name" autocomplete="name"></label>
+              <label>Mobile Number<input type="tel" name="mobile" placeholder="Mobile number" autocomplete="tel"></label>
+            </div>
+            <label>Email Address<input type="email" name="email" placeholder="you@company.com" autocomplete="email"></label>
+            <label>Enquiry Type<select name="enquiry"><option value="">Select an option</option><option>Product Engineering</option><option>Manufacturing Engineering</option><option>General Enquiry</option></select></label>
+            <label>How can we help?<textarea name="message" rows="5" placeholder="Briefly describe your engineering requirement"></textarea></label>
+            <button class="contact-button" type="button">Submit Enquiry <span aria-hidden="true">→</span></button>
+          </form>
+        </aside>
       </div>
     </section>
   </main>
 
-
-    <!-- Footer -->
   <div id="footer"></div>
-  <!-- Client JavaScript -->
   <script src="js/include.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -1,192 +1,206 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Manufacturing Engineering - CARLine Technologies</title>
-
-  <meta name="description" content="Explore CARLine Technologies Manufacturing Engineering solutions including Process Planning, Assembly Line Simulation, and Ergonomics study.">
-
-
-
+  <meta name="description" content="CARLine provides manufacturing engineering support through process planning, tool and fixture design, engineering documentation, feasibility studies, and digital manufacturing simulation.">
   <!-- Google Fonts -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-
-
-  <!-- Split CSS Modules -->
-
+  <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/global.css">
-
   <link rel="stylesheet" href="css/navbar.css">
-
   <link rel="stylesheet" href="css/services.css">
-
   <link rel="stylesheet" href="css/footer.css">
-
   <link rel="stylesheet" href="css/responsive.css">
-
 </head>
-
 <body>
-
-
-
   <!-- Navigation Header -->
-
   <div id="header"></div>
 
-<main>
-
-    <!-- Detailed Manufacturing Page Content -->
-
-    <section class="details-section">
-
-      <div class="details-container">
-
-
-
-        <a href="index.html" class="details-back-link">
-
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-
-            <line x1="19" y1="12" x2="5" y2="12"/>
-
-            <polyline points="12 19 5 12 12 5"/>
-
-          </svg>
-
-          Back to Home Page
-
-        </a>
-
-
-
-        <div class="details-header animate-fade-up">
-
-          <div class="details-pretitle">Automotive Services</div>
-
-          <h1 class="details-title">Manufacturing Engineering</h1>
-
-          <p class="details-intro">
-
-            We bridge the gap between initial product styling and final shopfloor execution. Our manufacturing engineering solutions focus on optimizing layout design, lowering cycle times, improving work ergonomics, and securing defect-free automated assembly.
-
+  <main>
+    <!-- Hero Section -->
+    <header class="details-hero">
+      <div class="details-hero-container">
+        <div class="details-hero-copy animate-fade-up">
+          <a href="services.html" class="details-back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back to Services
+          </a>
+          <p class="about-eyebrow" style="margin-top: 1rem;">Automotive Services</p>
+          <h1 class="details-title" style="margin-top: 0.5rem; font-size: clamp(2.5rem, 4.5vw, 3.5rem);">Manufacturing Engineering</h1>
+          <p class="details-intro" style="max-width: 600px; margin-top: 1rem;">
+            We provide manufacturing engineering support for automotive OEMs and Tier-1 suppliers through process planning, tool and fixture design, engineering documentation, feasibility studies, and digital manufacturing simulation.
           </p>
-
         </div>
-
-
-
-        <!-- Features details grid layout -->
-
-        <div class="details-grid">
-
-
-
-          <!-- Feature 1: Process Planning -->
-
-          <div class="details-feature-card scroll-reveal">
-
-            <div class="feature-num">01</div>
-
-            <h2 class="feature-title">Process Planning & Sequencing</h2>
-
-            <p class="feature-desc">
-
-              Designing assembly operations step-by-step to maximize manufacturing efficiency, prevent production bottlenecks, and ensure logical tool layouts.
-
-            </p>
-
-          </div>
-
-
-
-          <!-- Feature 2: Line Simulation -->
-
-          <div class="details-feature-card scroll-reveal">
-
-            <div class="feature-num">02</div>
-
-            <h2 class="feature-title">Assembly Line Simulation & FEA</h2>
-
-            <p class="feature-desc">
-
-              Constructing 3D digital twins of cell structures to run line load balance analyses, coordinate system checks, and collision detection before mechanical build.
-
-            </p>
-
-          </div>
-
-
-
-          <!-- Feature 3: Tool & Fixture Design -->
-
-          <div class="details-feature-card scroll-reveal">
-
-            <div class="feature-num">03</div>
-
-            <h2 class="feature-title">Precision Tool & Fixture Design</h2>
-
-            <p class="feature-desc">
-
-              Designing heavy weld fixtures, ergonomic hand tools, modular grips, and automated robotic grippers tailored to structural sheet metal tolerances.
-
-            </p>
-
-          </div>
-
-
-
-          <!-- Feature 4: Technical Documentation -->
-
-          <div class="details-feature-card scroll-reveal">
-
-            <div class="feature-num">04</div>
-
-            <h2 class="feature-title">Shopfloor Work Instructions (SOPs)</h2>
-
-            <p class="feature-desc">
-
-              Providing clear, detailed graphical Standard Operating Procedures (SOPs), process control charts, and tooling instructions for quality assurance.
-
-            </p>
-
-          </div>
-
-
-
+        <div class="details-hero-image-panel animate-fade-up">
+          <img src="images/manufacturing_engineering_exact.jpg" alt="Automotive Manufacturing Engineering Robotic Line" loading="eager">
         </div>
-
       </div>
+    </header>
 
+    <!-- Workflow / Content Section -->
+    <section class="workflow-section">
+      <div class="workflow-container">
+        <div class="timeline-intro scroll-reveal" style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+          <p class="about-eyebrow">Manufacturing Support</p>
+          <h2 class="section-title">Manufacturing Engineering Services</h2>
+          <p class="section-subtitle">We develop manufacturing-ready designs and supporting engineering data for automotive production teams.</p>
+        </div>
+
+        <div class="workflow-grid">
+          <!-- Process Planning -->
+          <article class="workflow-card scroll-reveal">
+            <div class="workflow-image-container">
+              <img src="images/planning.png" alt="Operational routing and assembly sequences" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Section 01</span>
+              <h3 class="workflow-title">Process Planning</h3>
+              <p class="workflow-desc">Define process sequences, station concepts, and manufacturing feasibility inputs that support efficient automotive assembly operations.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> Assembly Sequences</li>
+                <li><span class="workflow-check">✔</span> Line Load Balances</li>
+                <li><span class="workflow-check">✔</span> Space Allocation Layouts</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Tool & Fixture Design -->
+          <article class="workflow-card scroll-reveal">
+            <div class="workflow-image-container">
+              <img src="images/tooling.jpg" alt="Automotive weld fixture design in CAD" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Section 02</span>
+              <h3 class="workflow-title">Tool & Fixture Design</h3>
+              <p class="workflow-desc">Develop CATIA tooling and fixture concepts with locating, clamping, access, and interface requirements for automotive components and assemblies.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> Welding Fixture Assemblies</li>
+                <li><span class="workflow-check">✔</span> Locator & Clamp Layouts</li>
+                <li><span class="workflow-check">✔</span> Weld Gun Clearances</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Manufacturing Documentation -->
+          <article class="workflow-card scroll-reveal">
+            <div class="workflow-image-container">
+              <img src="images/tooling-detail.png" alt="Detailed fixture assembly drawing" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Section 03</span>
+              <h3 class="workflow-title">Engineering Documentation</h3>
+              <p class="workflow-desc">Create engineering drawings, bills of materials, fixture detailing, and controlled documentation to support manufacturing preparation.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> Detailing & Drawing Sheets</li>
+                <li><span class="workflow-check">✔</span> Shimming Guidelines</li>
+                <li><span class="workflow-check">✔</span> Purchase & Custom BOMs</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Digital Manufacturing Simulation -->
+          <article class="workflow-card scroll-reveal" style="grid-column: span 1;">
+            <div class="workflow-image-container">
+              <img src="images/robotic.jpg" alt="Robotic cell simulation and reach study" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Section 04</span>
+              <h3 class="workflow-title">Digital Manufacturing Simulation</h3>
+              <p class="workflow-desc">Develop digital manufacturing studies to assess robotic reachability, collision risks, process access, and cycle-time feasibility.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> Reachability Analysis</li>
+                <li><span class="workflow-check">✔</span> Collision Diagnostics</li>
+                <li><span class="workflow-check">✔</span> Cycle Time Verification</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
+    <!-- Manufacturing Capabilities Section -->
+    <section class="capabilities-section">
+      <div class="workflow-container">
+        <div class="timeline-intro scroll-reveal" style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+          <p class="about-eyebrow">Skills & Domains</p>
+          <h2 class="section-title">Engineering Capabilities</h2>
+          <p class="section-subtitle">Our capabilities provide engineering support that helps customers prepare automotive designs and processes for manufacturing.</p>
+        </div>
+
+        <div class="capabilities-grid">
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Process Planning</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Tool Design</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Fixture Design</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Engineering Documentation</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Robotic Process Simulation</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Manufacturing Feasibility</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Manufacturing-ready Designs</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Change Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Platform Section -->
+    <section class="platforms-section">
+      <div class="workflow-container">
+        <div class="timeline-intro scroll-reveal" style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+          <p class="about-eyebrow">CATIA</p>
+          <h2 class="section-title">Engineering Platform</h2>
+          <p class="section-subtitle">CARLine Technologies develops high-precision mechanical automotive designs using CATIA. We create production-ready 3D CAD models, assemblies, engineering drawings, tooling concepts, and manufacturing-ready digital designs for automotive OEMs and Tier-1 suppliers.</p>
+        </div>
+
+        <div class="platforms-grid">
+          <article class="platform-card scroll-reveal">
+            <div class="platform-header">
+              <div class="platform-logo-container">C</div>
+              <div class="platform-meta">
+                <h3>CATIA</h3>
+                <span>Mechanical Automotive Engineering</span>
+              </div>
+            </div>
+            <p class="platform-desc">CATIA supports our manufacturing engineering work through tooling concepts, fixture assemblies, engineering drawings, manufacturing feasibility studies, and production-ready digital design data.</p>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
-
-
-    <!-- Footer -->
-
+  <!-- Footer -->
   <div id="footer"></div>
 
-
-
   <!-- Client JavaScript -->
-
   <script src="js/include.js"></script>
   <script src="js/main.js"></script>
-
 </body>
-
 </html>

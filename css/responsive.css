@@ -63,7 +63,7 @@
   }
   
   .cards-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
   
@@ -115,8 +115,13 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(29, 78, 216, 0.1);
     padding-top: 2rem;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   
   .pillar-card {

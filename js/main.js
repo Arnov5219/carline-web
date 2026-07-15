@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupScrollReveal();
   setupMetricsCounter();
   setupShareButton();
+  setupTimelineAnimation();
 });
 
 /**
@@ -247,4 +248,69 @@ function setupShareButton() {
       }
     }
   });
+}
+
+/**
+ * 7. Engineering Process Timeline Animation & Scroll Progress
+ */
+function setupTimelineAnimation() {
+  const timeline = document.querySelector('.timeline-container');
+  const lineFill = document.querySelector('.timeline-line-fill');
+  const items = document.querySelectorAll('.timeline-item');
+  
+  if (!timeline) return;
+
+  // Scroll Progress line calculation
+  const handleTimelineScroll = () => {
+    const rect = timeline.getBoundingClientRect();
+    const viewportHeight = window.innerHeight;
+    
+    // Start filling when top of timeline is at 75% viewport height
+    const startOffset = viewportHeight * 0.75;
+    const endOffset = viewportHeight * 0.25;
+    
+    const totalHeight = rect.height;
+    const currentProgress = (viewportHeight - rect.top - startOffset) / (totalHeight - (startOffset - endOffset));
+    
+    const progressPercent = Math.max(0, Math.min(100, currentProgress * 100));
+    if (lineFill) {
+      lineFill.style.height = `${progressPercent}%`;
+    }
+  };
+
+  window.addEventListener('scroll', handleTimelineScroll);
+  window.addEventListener('resize', handleTimelineScroll);
+  handleTimelineScroll();
+
+  // Highlight Active Stage via IntersectionObserver
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      root: null,
+      threshold: 0.1, // Looser threshold
+      rootMargin: '-10% 0px -10% 0px' // Looser margin
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed', 'active');
+          // Set others to inactive
+          items.forEach(item => {
+            if (item !== entry.target) {
+              item.classList.remove('active');
+            }
+          });
+        } else {
+          const rect = entry.target.getBoundingClientRect();
+          if (rect.top > window.innerHeight || rect.bottom < 0) {
+            entry.target.classList.remove('active');
+          }
+        }
+      });
+    }, observerOptions);
+
+    items.forEach(item => observer.observe(item));
+  } else {
+    items.forEach(item => item.classList.add('revealed', 'active'));
+  }
 }

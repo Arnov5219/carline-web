@@ -1,192 +1,264 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Product Engineering - CARLine Technologies</title>
-
-  <meta name="description" content="Explore CARLine Technologies Product Engineering solutions including Interior/Exterior Trims, NVH parts, and Body-in-White (BIW) design.">
-
-
-
+  <meta name="description" content="We develop high-precision 3D CAD models using CATIA for automotive components and vehicle systems. Our engineers create production-ready digital designs, detailed assemblies, and engineering drawings.">
   <!-- Google Fonts -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-
-
-  <!-- Split CSS Modules -->
-
+  <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/global.css">
-
   <link rel="stylesheet" href="css/navbar.css">
-
   <link rel="stylesheet" href="css/services.css">
-
   <link rel="stylesheet" href="css/footer.css">
-
   <link rel="stylesheet" href="css/responsive.css">
-
 </head>
-
 <body>
-
-
-
   <!-- Navigation Header -->
-
   <div id="header"></div>
 
-<main>
-
-    <!-- Detailed Product Page Content -->
-
-    <section class="details-section">
-
-      <div class="details-container">
-
-
-
-        <a href="index.html" class="details-back-link">
-
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-
-            <line x1="19" y1="12" x2="5" y2="12"/>
-
-            <polyline points="12 19 5 12 12 5"/>
-
-          </svg>
-
-          Back to Home Page
-
-        </a>
-
-
-
-        <div class="details-header animate-fade-up">
-
-          <div class="details-pretitle">Automotive Services</div>
-
-          <h1 class="details-title">Product Engineering</h1>
-
-          <p class="details-intro">
-
-            We provide end-to-end product engineering solutions that optimize performance, weight, noise control, safety, and manufacturability for global automotive manufacturers.
-
+  <main>
+    <!-- Hero Section -->
+    <header class="details-hero">
+      <div class="details-hero-container">
+        <div class="details-hero-copy animate-fade-up">
+          <a href="services.html" class="details-back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back to Services
+          </a>
+          <p class="about-eyebrow" style="margin-top: 1rem;">Automotive Services</p>
+          <h1 class="details-title" style="margin-top: 0.5rem; font-size: clamp(2.5rem, 4.5vw, 3.5rem);">Product Engineering</h1>
+          <p class="details-intro" style="max-width: 600px; margin-top: 1rem;">
+            We provide CATIA-based mechanical automotive engineering for OEMs and Tier-1 suppliers, developing production-ready 3D CAD models, automotive assemblies, and engineering drawings for manufacturing teams.
           </p>
-
         </div>
-
-
-
-        <!-- Features details grid layout -->
-
-        <div class="details-grid">
-
-
-
-          <!-- Feature 1: BIW Design -->
-
-          <div class="details-feature-card scroll-reveal">
-
-            <div class="feature-num">01</div>
-
-            <h2 class="feature-title">Body-in-White (BIW) Engineering</h2>
-
-            <p class="feature-desc">
-
-              Conceptualizing and modeling body structures, including pillars, floor assemblies, roof bows, and body side panels, ensuring maximum torsional stiffness and lightweighting.
-
-            </p>
-
-          </div>
-
-
-
-          <!-- Feature 2: Exterior & Interior Trims -->
-
-          <div class="details-feature-card scroll-reveal">
-
-            <div class="feature-num">02</div>
-
-            <h2 class="feature-title">Interior & Exterior Trims</h2>
-
-            <p class="feature-desc">
-
-              Developing injection-molded components such as bumpers, grills, dashboards, door cards, and pillar trim elements focusing on surface aesthetics and mechanical fit.
-
-            </p>
-
-          </div>
-
-
-
-          <!-- Feature 3: NVH Parts -->
-
-          <div class="details-feature-card scroll-reveal">
-
-            <div class="feature-num">03</div>
-
-            <h2 class="feature-title">NVH & Acoustic Insulation</h2>
-
-            <p class="feature-desc">
-
-              Designing engine bay shields, dashboard acoustic liners, and underbody dynamic dampers to suppress noise, vibration, and harshness (NVH) in passenger cabins.
-
-            </p>
-
-          </div>
-
-
-
-          <!-- Feature 4: Safety & Crashworthiness -->
-
-          <div class="details-feature-card scroll-reveal">
-
-            <div class="feature-num">04</div>
-
-            <h2 class="feature-title">Safety & Regulatory Analysis</h2>
-
-            <p class="feature-desc">
-
-              Optimizing sheet metal deformation structures for energy absorption during collisions, meeting global FMVSS and Euro NCAP crash safety standards.
-
-            </p>
-
-          </div>
-
-
-
+        <div class="details-hero-image-panel animate-fade-up">
+          <img src="images/product_engineering_exact.png" alt="Automotive Product Engineering BIW Model" loading="eager">
         </div>
-
       </div>
+    </header>
 
+    <!-- Workflow Section -->
+    <section class="workflow-section">
+      <div class="workflow-container">
+        <div class="timeline-intro scroll-reveal" style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+          <p class="about-eyebrow">CATIA-Based Product Engineering</p>
+          <h2 class="section-title">Product Engineering Workflow</h2>
+          <p class="section-subtitle">Our structured workflow develops automotive concepts into production-ready CAD models, assemblies, and engineering documentation.</p>
+        </div>
+
+        <div class="workflow-grid">
+          <!-- Stage 1 -->
+          <article class="workflow-card scroll-reveal">
+            <div class="workflow-image-container">
+              <img src="images/planning.png" alt="Boundary conditions and packaging studies" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Stage 01</span>
+              <h3 class="workflow-title">Requirement Analysis</h3>
+              <p class="workflow-desc">Define functional requirements, vehicle packaging constraints, interfaces, and target engineering conditions before CAD development begins.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> Boundary Definition</li>
+                <li><span class="workflow-check">✔</span> Packaging Studies</li>
+                <li><span class="workflow-check">✔</span> Space Allocation</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Stage 2 -->
+          <article class="workflow-card scroll-reveal">
+            <div class="workflow-image-container">
+              <img src="images/concept.png" alt="Concept wireframes and proposal models" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Stage 02</span>
+              <h3 class="workflow-title">Concept Design</h3>
+              <p class="workflow-desc">Develop feasible mechanical concepts, package studies, and initial layouts aligned with styling surfaces and vehicle interfaces.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> Concept Feasibility</li>
+                <li><span class="workflow-check">✔</span> Alternative Layouts</li>
+                <li><span class="workflow-check">✔</span> Section Proposals</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Stage 3 -->
+          <article class="workflow-card scroll-reveal">
+            <div class="workflow-image-container">
+              <img src="images/trims-biw.png" alt="Parametric 3D CAD modeling in CATIA" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Stage 03</span>
+              <h3 class="workflow-title">3D CAD Modeling (CATIA)</h3>
+              <p class="workflow-desc">Create high-precision parametric CATIA models for BIW structures, sheet metal parts, plastic trim, and automotive assemblies.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> Class-A Surface Feasibility</li>
+                <li><span class="workflow-check">✔</span> Parametric Part Modeling</li>
+                <li><span class="workflow-check">✔</span> Component CAD Design</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Stage 4 -->
+          <article class="workflow-card scroll-reveal">
+            <div class="workflow-image-container">
+              <img src="images/bumper.jpg" alt="Detail engineering and plastic fits" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Stage 04</span>
+              <h3 class="workflow-title">Detailed Engineering</h3>
+              <p class="workflow-desc">Refine production-ready CAD models with feature definition, joining interfaces, tolerance requirements, and manufacturing feasibility considerations.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> Wall Thickness definition</li>
+                <li><span class="workflow-check">✔</span> Draft Angle Analysis</li>
+                <li><span class="workflow-check">✔</span> Plastic Clips & Bosses</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Stage 5 -->
+          <article class="workflow-card scroll-reveal">
+            <div class="workflow-image-container">
+              <img src="images/tooling-detail.png" alt="2D Drafting and GD&T sheet release" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Stage 05</span>
+              <h3 class="workflow-title">2D Engineering Drawings</h3>
+              <p class="workflow-desc">Prepare detailed part and assembly engineering drawings with dimensions, GD&amp;T, notes, and release information.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> General Arrangement Drawings</li>
+                <li><span class="workflow-check">✔</span> Manufacturing Drawings</li>
+                <li><span class="workflow-check">✔</span> Production Drawings</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Stage 6 -->
+          <article class="workflow-card scroll-reveal">
+            <div class="workflow-image-container">
+              <img src="images/ecm.png" alt="Engineering Change Management CAD study" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Stage 06</span>
+              <h3 class="workflow-title">Engineering Change Management</h3>
+              <p class="workflow-desc">Assess engineering change requests, update CATIA models and drawings, and maintain controlled revision data.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> Change Impact Analysis</li>
+                <li><span class="workflow-check">✔</span> Revision Updates</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Stage 7 -->
+          <article class="workflow-card scroll-reveal" style="grid-column: span 1;">
+            <div class="workflow-image-container">
+              <img src="images/final.png" alt="Production-ready CAD package release" loading="lazy">
+            </div>
+            <div class="workflow-content">
+              <span class="workflow-stage">Stage 07</span>
+              <h3 class="workflow-title">Final CAD Data Release</h3>
+              <p class="workflow-desc">Complete CAD and drawing checks, consolidate release packages, and deliver production-ready engineering data to the customer.</p>
+              <ul class="workflow-bullets">
+                <li><span class="workflow-check">✔</span> Assembly Structure Check</li>
+                <li><span class="workflow-check">✔</span> Production-Ready Releases</li>
+                <li><span class="workflow-check">✔</span> Design Compliance Check</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
+    <!-- Engineering Capabilities Section -->
+    <section class="capabilities-section">
+      <div class="workflow-container">
+        <div class="timeline-intro scroll-reveal" style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+          <p class="about-eyebrow">Skills & Domains</p>
+          <h2 class="section-title">Engineering Capabilities</h2>
+          <p class="section-subtitle">We possess specialist automotive design capabilities across multiple product development domains.</p>
+        </div>
+
+        <div class="capabilities-grid">
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">3D CAD Modeling (CATIA)</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">BIW Design</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Sheet Metal Design</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Plastic Trim Design</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Interior Components</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Exterior Components</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Automotive Assembly Design</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">2D Engineering Drawings</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">GD&amp;T</span>
+          </div>
+          <div class="capability-card scroll-reveal">
+            <div class="capability-icon"></div>
+            <span class="capability-text">Engineering Change Management</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Platform Section -->
+    <section class="platforms-section">
+      <div class="workflow-container">
+        <div class="timeline-intro scroll-reveal" style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+          <p class="about-eyebrow">CATIA</p>
+          <h2 class="section-title">Engineering Platform</h2>
+          <p class="section-subtitle">CARLine Technologies develops high-precision mechanical automotive designs using CATIA. We create production-ready 3D CAD models, assemblies, engineering drawings, tooling concepts, and manufacturing-ready digital designs for automotive OEMs and Tier-1 suppliers.</p>
+        </div>
+
+        <div class="platforms-grid">
+          <article class="platform-card scroll-reveal">
+            <div class="platform-header">
+              <div class="platform-logo-container">C</div>
+              <div class="platform-meta">
+                <h3>CATIA</h3>
+                <span>Mechanical Automotive Engineering</span>
+              </div>
+            </div>
+            <p class="platform-desc">CATIA supports our mechanical design work across BIW, sheet metal, plastic components, automotive assemblies, engineering drawings, tooling concepts, and controlled CAD data release.</p>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
-
-
-    <!-- Footer -->
-
+  <!-- Footer -->
   <div id="footer"></div>
 
-
-
   <!-- Client JavaScript -->
-
   <script src="js/include.js"></script>
   <script src="js/main.js"></script>
-
 </body>
-
 </html>
