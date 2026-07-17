@@ -961,4 +961,104 @@
   }
 }
 
+/* Helper class for 2-column workflow grid (perfect for 4 cards) */
+.workflow-grid.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 960px;
+  margin: 3rem auto 0;
+}
+
+/* Premium Showcase design for single platform card */
+.platforms-showcase {
+  max-width: 680px;
+  margin: 3rem auto 0;
+  display: block;
+}
+
+.platform-featured-card {
+  background: linear-gradient(145deg, #ffffff, #f8fbff);
+  border: 1px solid rgba(29, 78, 216, 0.12);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 15px 40px rgba(29, 78, 216, 0.03);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Accent blue background glow */
+.platform-featured-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(96, 165, 250, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.platform-featured-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-blue);
+  box-shadow: 0 20px 50px rgba(29, 78, 216, 0.07);
+}
+
+.platform-featured-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.platform-featured-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, var(--accent-blue) 0%, #1e40af 100%);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  box-shadow: 0 8px 20px rgba(29, 78, 216, 0.2);
+}
+
+.platform-featured-meta h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.platform-featured-meta span {
+  font-size: 0.85rem;
+  color: var(--accent-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.platform-featured-desc {
+  font-size: 1.02rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .platform-featured-card {
+    padding: 2.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .platform-featured-card {
+    padding: 1.75rem 1.5rem;
+  }
+}
+
 

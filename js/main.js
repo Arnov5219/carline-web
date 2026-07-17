@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupMetricsCounter();
   setupShareButton();
   setupTimelineAnimation();
+  setupContactForm();
 });
 
 /**
@@ -313,4 +314,69 @@ function setupTimelineAnimation() {
   } else {
     items.forEach(item => item.classList.add('revealed', 'active'));
   }
+}
+
+/**
+ * 8. Contact Form Submission handler for Google Apps Script Web App
+ */
+function setupContactForm() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  const submitButton = form.querySelector('.contact-button');
+  const originalButtonText = submitButton ? submitButton.innerHTML : 'Submit Enquiry';
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    // Collect values from all form fields
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get('name'),
+      phone: formData.get('phone'),
+      email: formData.get('email'),
+      enquiry: formData.get('enquiry'),
+      message: formData.get('message')
+    };
+
+    // Google Apps Script Web App URL placeholder
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbzfww4_FR5qLHhg6UooEYOoxoS-c7MTfbwF6VxYmkQ-g4MxjV1dc3zswfLdsi48X34a/exec';
+
+    // Disable button and show loader state to prevent multiple submissions
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.innerHTML = 'Submitting...';
+    }
+
+    try {
+      // Send the data as JSON using fetch() with the POST method
+      const response = await fetch(scriptUrl, {
+        method: 'POST',
+        // Use text/plain to avoid preflight CORS errors with Google Apps Script
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8'
+        },
+        body: JSON.stringify(data),
+        redirect: 'follow'
+      });
+
+      // Google Apps Script redirects after post; if redirect: 'follow' succeeds,
+      // check response status and report success.
+      if (response.ok) {
+        alert('Thank you! Your enquiry has been submitted successfully.');
+        form.reset();
+      } else {
+        throw new Error('Server responded with status: ' + response.status);
+      }
+    } catch (error) {
+      console.error('Error submitting form to Google Apps Script:', error);
+      alert('An error occurred while submitting your enquiry. Please try again.');
+    } finally {
+      // Re-enable button and restore original text
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalButtonText;
+      }
+    }
+  });
 }
